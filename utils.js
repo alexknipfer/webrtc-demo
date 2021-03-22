@@ -1,20 +1,3 @@
-export const getLocalAndRemoteStreams = async () => {
-  const localStream = null;
-  const remoteStream = null;
-
-  localStream = await navigator.mediaDevices.getUserMedia({
-    video: true,
-    audio: true,
-  });
-
-  remoteStream = new MediaStream();
-
-  return {
-    localStream,
-    remoteStream,
-  };
-};
-
 export const createVideoElement = ({ id, className, srcObject, muted }) => {
   const el = document.createElement("video");
 
