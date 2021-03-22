@@ -1,10 +1,6 @@
 import { Firebase } from "./services/Firebase";
 import { PeerConnection } from "./services/PeerConnection";
 import { Stream } from "./services/Stream";
-import { getLocalAndRemoteStreams } from "./utils";
-
-// let localStream = null;
-// let remoteStream = null;
 
 const callIdElement = document.getElementById("callId");
 
