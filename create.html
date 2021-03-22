@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex's Conference Calls | Create Call</title>
+  </head>
+  <body class="bg-gray-200 flex flex-col items-center justify-center">
+    <h1 class="text-5xl">Create Call</h1>
+
+    <div id="callId"></div>
+
+    <div class="flex">
+      <span>
+        <video id="webcamVideo" autoplay playsinline></video>
+      </span>
+      <span>
+        <video id="remoteVideo" autoplay playsinline></video>
+      </span>
+    </div>
+
+    <script type="module" src="/create.js"></script>
+  </body>
+</html>

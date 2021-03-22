@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex's Conference Calls | Answer Call</title>
+  </head>
+  <body class="bg-gray-200 flex flex-col items-center justify-center">
+    <h1 class="text-5xl">Answer Call</h1>
+
+    <div class="flex items-center py-5">
+      <input
+        id="callId"
+        placeholder="Enter call id"
+        class="px-5 py-3 w-64 focus:outline-none focus:ring-2 focus:ring-indigo-300 rounded mr-5"
+      />
+      <button
+        id="answerCall"
+        class="bg-blue-500 hover:bg-blue-600 text-white rounded py-3 px-5 mr-5 cursor-pointer"
+      >
+        Answer Call
+      </button>
+    </div>
+
+    <div id="videoContainer" class="flex">
+      <!-- <span>
+        <video id="webcamVideo" autoplay playsinline></video>
+      </span>
+      <span>
+        <video id="remoteVideo" autoplay playsinline></video>
+      </span> -->
+    </div>
+
+    <script type="module" src="/answer.js"></script>
+  </body>
+</html>

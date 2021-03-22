@@ -3,11 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alex's Conference Calls</title>
   </head>
-  <body>
-    <h2>1. Start your Webcam</h2>
+  <body class="bg-gray-200 flex flex-col items-center justify-center">
+    <h1 class="text-5xl">Alex's Conference Calls</h1>
+    <div class="flex mt-5">
+      <a
+        class="bg-blue-500 hover:bg-blue-600 text-white rounded py-3 px-5 mr-5 cursor-pointer"
+        href="/create.html"
+      >
+        Create Call
+      </a>
+      <a
+        class="bg-blue-500 hover:bg-blue-600 text-white rounded py-3 px-5 mr-5 cursor-pointer"
+      >
+        Join Call
+      </a>
+    </div>
+    <!-- <h2>1. Start your Webcam</h2>
     <div class="videos">
       <span>
         <h3>Local Stream</h3>
@@ -30,7 +45,7 @@
 
     <h2>4. Hangup</h2>
 
-    <button id="hangupButton" disabled>Hangup</button>
+    <button id="hangupButton" disabled>Hangup</button> -->
 
     <script type="module" src="/main.js"></script>
   </body>
