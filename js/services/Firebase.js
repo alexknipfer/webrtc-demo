@@ -69,24 +69,6 @@ class Firebase {
     return this._answerCandidatesCollection;
   }
 
-  registerHandlers() {
-    this.answerCandidatesCollection.onSnapshot((snapshot) => {
-      snapshot.docChanges().forEach((change) => {
-        if (change.type === "added") {
-          this.onNewAnswer && this.onNewAnswer(change.doc.data());
-        }
-      });
-    });
-
-    this.offerCandidatesCollection.onSnapshot((snapshot) => {
-      snapshot.docChanges().forEach((change) => {
-        if (change.type === "added") {
-          this.onNewOffer && this.onNewOffer(change.doc.data());
-        }
-      });
-    });
-  }
-
   static getInstance() {
     return new Firebase();
   }
