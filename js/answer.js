@@ -1,7 +1,7 @@
 import { Firebase } from "./services/Firebase";
 import { PeerConnection } from "./services/PeerConnection";
 import { Stream } from "./services/Stream";
-import { createVideoElement } from "../utils";
+import { createVideoElement } from "./utils";
 
 const videoContainer = document.getElementById("videoContainer");
 const answerButton = document.getElementById("answerCall");
